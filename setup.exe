@@ -1,0 +1,34 @@
+//Create Backpack wallet-Bank_wallet
+//Another wallet--User wallet
+C:\Users\samir> cd C:\Users\samir\Solana\bin
+
+C:\Users\samir\Solana\bin>solana-keygen.exe
+solana-keygen 1.13.7 (src:88aeaa82; feat:1775889670)
+Solana key generation utility
+
+
+C:\Users\samir\Solana\bin>solana-keygen new
+Generating a new keypair
+
+For added security, enter a BIP39 passphrase
+
+NOTE! This passphrase improves security of the recovery seed phrase NOT the
+keypair file itself, which is stored as insecure plain text
+
+
+C:\Users\samir\Solana\bin>solana config set --url https://api.devnet.solana.com
+Config File: C:\Users\samir\.config\solana\cli\config.yml
+RPC URL: https://api.devnet.solana.com
+WebSocket URL: wss://api.devnet.solana.com/ (computed)
+Keypair Path: C:\Users\samir\.config\solana\id.json
+Commitment: confirmed
+
+//Private key
+C:\Users\samir\Solana\bin>type "%USERPROFILE%\.config\solana\id.json"
+[32,123,99,27,151,55,57,132,132,168,62,246,82,10,35,33,63,241,244,2,211,64,120,178,108,249,170,162,157,50,219,173,22,8,183,184,192,11,179,197,67,28,69,29,254,173,238,37,228,143,91,49,29,46,187,20,184,245,211,17,56,189,172,201]
+
+//Air_Drop(Solana)----Error may occur in this stage--
+C:\Users\samir\Solana\bin>solana airdrop 1
+Requesting airdrop of 1 SOLolana airdrop 1
+
+--Generate New Token-->Mint 5000 To Main bankaccount->Then distribute_> Money Printer =MINt

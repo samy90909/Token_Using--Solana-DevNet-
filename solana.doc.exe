@@ -1,0 +1,33 @@
+1)cmd /c "curl https://release.solana.com/v1.15.2/solana-install-init-x86_64-pc-windows-msvc.exe --output C:\solana-install-tmp\solana-install-init.exe --create-dirs"
+2)Install the sol
+C:\solana-install-tmp\solana-install-init.exe v1.15.2
+3)Check version solana --version
+4)Download the binaries by navigating to 
+!!!https://github.com/solana-labs/solana/releases/latest
+5)C:\solana-install-tmp\solana-release>cd solana-release/
+The system cannot find the path specified.
+
+C:\solana-install-tmp\solana-release>set PATH=%cd%/bin;%PATH%
+
+6)Create a wallet---ie
+          Generate a File System Wallet Keypair
+  mkdir %USERPROFILE%\my-solana-wallet(Directory on home)
+ 7):\solana-install-tmp\solana-release>solana-keygen new --outfile ~/my-solana-wallet/my-keypair.json
+Generating a new keypair..................
+........................:solana
+
+--Wrote new keypair to ~/my-solana-wallet/my-keypair.json
+=================================================================================
+pubkey: 4MTSStQCvvwgXyK9H6VX1EH1n9VP8fJMmAJFTnVBMiiM
+=================================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+weapon notable sun option favorite razor flat north trend denial resemble emotion
+=================================================================================
+
+8)Display pub key--solana-keygen pubkey ~/my-solana-wallet/my-keypair.json
+--------------------------------------------------------------------------
+
+9)Verify your Address against your Keypair file
+----------
+--------TBC
+C:\solana-install-tmp\solana-release>solana-keygen verify <4MTSStQCvvwgXyK9H6VX1EH1n9VP8fJMmAJFTnVBMiiM> C:\solana-install-tmp\solana-release\my-solana-wallet\my-keypair.json
